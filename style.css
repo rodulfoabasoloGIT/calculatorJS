@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+}
+.inline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.inline div {
+  width: 100px;
+  height: 50px;
+  background: rgb(166, 160, 160);
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
