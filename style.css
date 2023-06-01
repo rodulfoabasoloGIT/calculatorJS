@@ -15,20 +15,34 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container {
+.parent {
   width: 500px;
-  height: 500px;
+  height: 460px;
   background-color: yellow;
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.container {
+  width: 484px;
+  height: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .screen {
+  height: 75px;
+  background: red;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .inline {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+
 .inline div {
   width: 100px;
   height: 50px;
@@ -39,4 +53,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
 }
